@@ -30,7 +30,7 @@ class Checkpoint:
 
         elif self.estopping_patience is not None:
             self.epochs_no_improvement += 1
-            if self.self.epochs_no_improvement > self.estopping_patience:
+            if self.epochs_no_improvement > self.estopping_patience:
                 return True
 
         return False
